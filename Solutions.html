@@ -180,6 +180,7 @@
     
     
     </script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
     <body style=" background: url('IMAGES/backg.png')  no-repeat center fixed;background-size: cover;overflow-x: hidden;">
@@ -194,6 +195,11 @@
             
           
         </div>
+        <script>
+            if(screen.width<600){
+              window.location.replace("mobile.html");
+            }
+        </script>
         <div style="display: flex;position:relative;left: -13%;">
             <input value="About"  type="button" onclick="window.location.href='about.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
             color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;"/>
