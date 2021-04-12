@@ -35,6 +35,45 @@
             font-family: 'Cairo-Bold';
             src: url('/CSS/Cairo-Bold.ttf') format('truetype');
         }
+        * {
+	outline: none;
+}.underlineEffects ul { 
+  margin: 0 auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  text-align: center;
+}
+.underlineEffects li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+.underlineEffects a {
+  color: black;
+  
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.underlineEffects a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -3.5px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #4AC5D9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underlineEffects a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> 
@@ -183,7 +222,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-    <body style=" background: url('IMAGES/backg.png')  no-repeat center fixed;background-size: cover;overflow-x: hidden;">
+    <body style=" background: url('IMAGES/backk.png')  no-repeat center fixed;background-size: cover;overflow-x: hidden;">
         <div style="background-color: transparent;color: #28245C;text-align: center;">
             <a href="index.html">
                 <img src="IMAGES/main.png" alt="DATAPATROL" style="width: 250px;position:relative; left:0%;">
@@ -200,16 +239,24 @@
               window.location.replace("mobile.html");
             }
         </script>
-        <div style="display: flex;position:relative;left: -13%;">
-            <input value="About"  type="button" onclick="window.location.href='about.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-            color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;"/>
-            <input value="Solutions"  type="button" onclick="window.location.href='Solutions.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid #4AC5D9;
-            color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 37%;top: 25px;margin-left: 5%;"/>
-             <input value="Benefits"  type="button" onclick="window.location.href='benefits.html';" style="background-color:transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-            color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 34%;top: 25px;margin-left: 5%;"/>
-             <input value="System"  type="button" onclick="window.location.href='system.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-            color: #28245C;text-align: center;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 31%;top: 25px;margin-left: 5%; "/>
-        </div>
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                 <div class="underlineEffects" style="position:relative;left: -5%;">
+                     <ul>
+                        <li style="left: -4.5%;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">About</a></li>
+                        <li  style="left: 0%;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid #4AC5D9;
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">Solutions</a></li>
+                        <li style="left: 7.5%;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">benefits</a></li>
+                        <li style="left: 15%;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">system</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
 
    
    
@@ -264,12 +311,12 @@
   
        </div>
        <div style="display: flex;">
-        <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:110px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
-        <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;">
-            <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;top:130px">
+        <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:105px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
+        <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:130px">
+            <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;">
     </a>
-    <a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;">
-        <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;top:130px">
+    <a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:130px">
+        <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
         </a>
     </div>
     </body>

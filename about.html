@@ -33,6 +33,46 @@
             font-family: 'Cairo-Bold';
             src: url('/CSS/Cairo-Bold.ttf') format('truetype');
         }
+        * {
+	outline: none;
+}
+        .underlineEffects ul { 
+  margin: 0 auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  text-align: center;
+}
+.underlineEffects li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+.underlineEffects a {
+  color: black;
+  
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.underlineEffects a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -3.5px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #4AC5D9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underlineEffects a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">  
@@ -186,7 +226,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-    <body style=" background: url('IMAGES/backg.png')  no-repeat center fixed;background-size: cover;">
+    <body style=" background: url('IMAGES/backk.png')  no-repeat center fixed;background-size: cover;">
         <div style="background-color: transparent;color: #28245C;text-align: center;">
             <a href="index.html">
                 <img src="IMAGES/main.png" alt="DATAPATROL" style="width: 250px;position:relative; left:0%;">
@@ -198,16 +238,24 @@
             
           
         </div>
-<div style="display: flex;position:relative;left: -13%;">
-    <input value="About"  type="button" onclick="window.location.href='about.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid #4AC5D9;
-    color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;"/>
-    <input value="Solutions"  type="button" onclick="window.location.href='Solutions.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-    color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 37%;top: 25px;margin-left: 5%;"/>
-     <input value="Benefits"  type="button" onclick="window.location.href='benefits.html';" style="background-color:transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-    color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 34%;top: 25px;margin-left: 5%;"/>
-     <input value="System"  type="button" onclick="window.location.href='system.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-    color: #28245C;text-align: center;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 31%;top: 25px;margin-left: 5%; "/>
-</div>
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                 <div class="underlineEffects" style="position:relative;left: -5%;">
+                     <ul>
+                        <li style="left: -4.5%;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid #4AC5D9;
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">About</a></li>
+                        <li  style="left: 0%;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">Solutions</a></li>
+                        <li style="left: 7.5%;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">benefits</a></li>
+                        <li style="left: 15%;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">system</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
 
    
 <iframe id="frame" src="contact.html" title="contact us" style="width: 40%;height: 600px;border-color: transparent;position: absolute;overflow: hidden;left: 30%;top:220px;z-index: 3;background-color: rgba(230,230,230,1)"></iframe>
@@ -234,39 +282,39 @@
         }
     
     </script>
-<div style="position: relative;top:-40px;z-index: -1;">
+<div style="position: relative;top:-90px;z-index: -1;">
     <h1  style="font-family: Cairo-Bold;color: #28245C;position:relative; left:25%;top:150px;width: 700px;">About DATAPATROL</h1>
-    <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">DataPatrol is a software company, specialized in providing Security and Privacy of company’s data and information in an
+    <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 18px;">DataPatrol is a software company, specialized in providing Security and Privacy of company’s data and information in an
         <br>evolved way.</p>
 
-<p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;"> <strong >Why DataPatrol?</strong>  Because Data is more valuable nowadays than ever before. Driven with the new thinking, new technology
+<p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 18px;"> <strong >Why DataPatrol?</strong>  Because Data is more valuable nowadays than ever before. Driven with the new thinking, new technology
     capabilities and the drive toward digitally transformed and connected world, the usage and importance of Data is changing
     radically.</p>
-    <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;"><strong style="font-weight: 900;font-family:Cairo-Bold ;">Along with the value and importance of data, comes a higher risk to it!</strong></p>
-        <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Further security measures should be taken to secure and protect the data.DataPatrol is a software company, specialized in
+    <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 18px;"><strong style="font-weight: 900;font-family:Cairo-Bold ;">Along with the value and importance of data, comes a higher risk to it!</strong></p>
+        <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 18px;">Further security measures should be taken to secure and protect the data.DataPatrol is a software company, specialized in
             providing Security and Privacy of company’s data and information in an evolved way.</p>
-        <p style="font-family: Cairo-Bold;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight:900 !important;text-align: left;">GET IN TOUCH</p>
+        <p style="font-family: Cairo-Bold;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight:900 !important;text-align: left;font-size: 18px;">GET IN TOUCH</p>
         <p style="font-family: Cairo-Light;position: relative;left:25%;top:125px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 14px;">with our Sales Team to learn more:</p>
         <p style="font-family: Cairo-Light;position: relative;left:25%;top:100px;width: 950px;color: #EE316E;font-weight: 700 !important;text-align: left;font-size: 14px;">sales@datapatrol.com</p>
 
     </div>
-    <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:78%;top:150px">
+    <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:78%;top:70px">
     <a href="https://doc-14-a8-docs.googleusercontent.com/docs/securesc/8jedqscvo8vedcvan34qk43tkq6qoi1j/aff3pbllrd2a4ufsfa1mhr11198mc1fk/1617899850000/16282936433125029266/12036548399518707621Z/17jq-66V0vs1BT-Y-gNf525-YDUuUdrGm?e=download&nonce=kfudfstvgcmhi&user=12036548399518707621Z&hash=ndm53b9keg3f8mp36rocr5jssupi208p" download>
-        <img  id="contact" onclick="download()"  src="IMAGES/buttons/datasheet.png" alt="1" style="width: 130px;position:relative; left:8%;top:150px">
+        <img  id="contact" onclick="download()"  src="IMAGES/buttons/datasheet.png" alt="1" style="width: 130px;position:relative; left:8%;top:70px">
       </a>
     
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19640192.js"></script>
     <div style="display: flex;">
-        <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:150px">
+        <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:70px">
   
        </div>
        <div style="display: flex;">
-        <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:150px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
-        <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;">
-            <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;top:145px">
+        <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:60px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
+        <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:70px">
+            <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;">
     </a>
-    <a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;">
-        <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;top:145px">
+    <a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:70px">
+        <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
         </a>
         
     </div>

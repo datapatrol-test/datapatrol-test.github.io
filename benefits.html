@@ -31,6 +31,45 @@
       font-family: 'Cairo-Bold';
       src: url('/CSS/Cairo-Bold.ttf') format('truetype');
   }
+  * {
+	outline: none;
+}.underlineEffects ul { 
+  margin: 0 auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  text-align: center;
+}
+.underlineEffects li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+.underlineEffects a {
+  color: black;
+  
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.underlineEffects a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -3.5px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #4AC5D9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underlineEffects a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
   strong { font-weight: bold; }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -185,7 +224,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-    <body style="overflow-x: hidden; background: url('IMAGES/backg.png')  no-repeat center fixed;background-size: cover;"> 
+    <body style="overflow-x: hidden;overflow-y: hidden; background: url('IMAGES/backk.png')  no-repeat center fixed;background-size: cover;"> 
         <div style="background-color: transparent;color: #28245C;text-align: center;">
             <a href="index.html">
                 <img src="IMAGES/main.png" alt="DATAPATROL" style="width: 250px;position:relative; left:0%;">
@@ -197,16 +236,24 @@
             
           
         </div>
-        <div style="display: flex;position:relative;left: -13%;">
-            <input value="About"  type="button" onclick="window.location.href='about.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-            color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;"/>
-            <input value="Solutions"  type="button" onclick="window.location.href='Solutions.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-            color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 37%;top: 25px;margin-left: 5%;"/>
-             <input value="Benefits"  type="button" onclick="window.location.href='benefits.html';" style="background-color:transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid #4AC5D9;
-            color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 34%;top: 25px;margin-left: 5%;"/>
-             <input value="System"  type="button" onclick="window.location.href='system.html';" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 5px solid rgba(230,230,230,1);
-            color: #28245C;text-align: center;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 31%;top: 25px;margin-left: 5%; "/>
-        </div>
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+                 <div class="underlineEffects" style="position:relative;left: -5%;">
+                     <ul>
+                        <li style="left: -4.5%;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">About</a></li>
+                        <li  style="left: 0%;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">Solutions</a></li>
+                        <li style="left: 7.5%;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid #4AC5D9;
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">benefits</a></li>
+                        <li style="left: 15%;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                         color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">system</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
 
    
 <iframe id="frame" src="contact.html" title="contact us" style="width: 40%;height: 600px;border-color: transparent;position: absolute;overflow: hidden;left: 30%;top:220px;z-index: 3;background-color: rgba(230,230,230,1)"></iframe>
@@ -233,14 +280,14 @@
         }
     
     </script>
-<div style="position: relative;top:0px;left:15%;width: 900px;"> 
+<div style="position: relative;top:-40px;left:22%;width: 900px;zoom: 85%;"> 
     
     <h1  style="font-family: Cairo-Bold;color: #28245C;position:relative; left:25%;top:100px;width: 700px;">BENEFITS</h1>
     <div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:120px;display: flex;">
         <img src="IMAGES/numbers/1.png" alt="1" style="width: 70px;height: 70px;position:relative; left:4%;">
         <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679">IDENTIFY <strong style="font-family: Cairo-Bold;">OWNERSHIP</strong> OF YOUR DATA 
-            <p style="font-size: 15px;position:relative; top:-20px;">By applying digital watermarks on the screens, you make <br>
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">By applying digital watermarks on the screens, you make <br>
                 a statement that any data belongs to the company only.</p>
         
         </h2>
@@ -249,7 +296,7 @@
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:50px;display: flex;">
         <img src="IMAGES/numbers/2.png" alt="3" style="width: 70px;height: 70px;position:relative; left:4%;">
         <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">FORENSICS</strong> 
-            <p style="font-size: 15px;position:relative; top:-20px;">Metadata information will appear on all the screens, so you <br>
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">Metadata information will appear on all the screens, so you <br>
                 can track and investigate any publicly shared information.</p>
         
         </h2>
@@ -258,7 +305,7 @@
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:0px;display: flex;">
         <img src="IMAGES/numbers/3.png" alt="5" style="width: 70px;height: 70px;position:relative; left:4%;">
         <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">ALERT</strong> 
-            <p style="font-size: 15px;position:relative; top:-20px;">Having permanent watermarks on the screens, you assure <br>
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">Having permanent watermarks on the screens, you assure <br>
                 and alert all insiders that these data are confidential, and any<br>
                 exfiltration will be tracked.
             </p>
@@ -269,28 +316,29 @@
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:-40px;display: flex;">
         <img src="IMAGES/numbers/4.png" alt="7" style="width: 70px;height: 70px;position:relative; left:4%;">
         <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">COMPLIANCE</strong> 
-            <p style="font-size: 15px;position:relative; top:-20px;">Utilizing the AntiCopy feature which forces Data Entries to<br>
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">Utilizing the AntiCopy feature which forces Data Entries to<br>
                 write genuine content rather than copying it.
             </p>
         
         </h2>
         <img id="pc" src="IMAGES/icons/reliable.png" alt="8" style="width: 151px;height: 90px;position:relative; left:4%;top:-5px">
     </div>
-    <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:132.5%;top:-110px">
-</div>
+    
 </div>
 
-<div style="display: flex;">
-    <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:-110px">
+</div>
+<img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:78%;top:-125px">
 
-   </div>
-   <div style="display: flex;">
-    <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:-110px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
-    <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;">
-        <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;top:-108px">
+    <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:-125px">
+
+   
+   <div style="display: flex;position: relative;top:-130px !">
+    <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:-142px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
+    <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:-122px">
+        <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;">
 </a>
-<a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;">
-    <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;top:-110px">
+<a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:-122px">
+    <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
     </a>
 </div>
 
