@@ -284,22 +284,22 @@
     
 
     </script>
-<div>
-    <h1  style="font-family: Cairo-Bold;color: #28245C;position:relative; left:25%;top:100px;width: 700px;text-align: left;line-height: 95%;">Security and privacy <br>
+<div id="ALL">
+    <h1 id="p1"  style="font-family: Cairo-Bold;color: #28245C;position:relative; left:25%;top:100px;width: 700px;text-align: left;line-height: 95%;">Security and privacy <br>
         for company’s data and information.</h1>
-    <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">In a world where data is becoming more and more a <strong style="font-weight: 900;font-family:Cairo-Bold ;">valuable asset</strong> ,organizations have realized that they don't only need to protect their
+    <p id="p2" style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">In a world where data is becoming more and more a <strong style="font-weight: 900;font-family:Cairo-Bold ;">valuable asset</strong> ,organizations have realized that they don't only need to protect their
         <br>  proprietary information from external attackers, but also from internal ones.</p>
 
-<p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Investing in reliable state-of-the-art security measures and tools to prevent sensitive data breach is essential, However those measures<br>
+<p id="p3" style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Investing in reliable state-of-the-art security measures and tools to prevent sensitive data breach is essential, However those measures<br>
     cannot <strong style="font-weight: 900;font-family:Cairo-Bold ;">prevent</strong> the breach of sensitive data if insiders can take pictures of the computer screens! Taking pictures leaves no log trail that<br>
     identifies the perpetrator.</p>
-    <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Whilst the number of Insider-Related breaches rises every year, the Verizon 2019 Data Breach Investigations report says that 34% of all <br>
+    <p id="p4" style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Whilst the number of Insider-Related breaches rises every year, the Verizon 2019 Data Breach Investigations report says that 34% of all <br>
         breaches in 2018 were caused by Insiders.</p>
-        <p style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Here comes the <strong style="font-weight: 900;font-family:Cairo-Bold ;">necessity</strong> for a solution that can minimize the risk of internal threats and solve the continuous struggle of protecting all
+        <p id="p5" style="font-family: Cairo-Light;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;">Here comes the <strong style="font-weight: 900;font-family:Cairo-Bold ;">necessity</strong> for a solution that can minimize the risk of internal threats and solve the continuous struggle of protecting all
          <br>  company's owned data and information.</p>
-         <p style="font-family: Cairo-Bold;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight:900 !important;text-align: left;">GET IN TOUCH</p>
-        <p style="font-family: Cairo-Light;position: relative;left:25%;top:125px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 14px;">with our Sales Team to learn more:</p>
-        <p style="font-family: Cairo-Light;position: relative;left:25%;top:100px;width: 950px;color: #EE316E;font-weight: 700 !important;text-align: left;font-size: 14px;">sales@datapatrol.com</p>
+         <p id="p6" style="font-family: Cairo-Bold;position: relative;left:25%;top:150px;width: 950px;color: #005679;font-weight:900 !important;text-align: left;">GET IN TOUCH</p>
+        <p id="p7" style="font-family: Cairo-Light;position: relative;left:25%;top:125px;width: 950px;color: #005679;font-weight: 700 !important;text-align: left;font-size: 14px;">with our Sales Team to learn more:</p>
+        <p  id="p8"style="font-family: Cairo-Light;position: relative;left:25%;top:100px;width: 950px;color: #EE316E;font-weight: 700 !important;text-align: left;font-size: 14px;">sales@datapatrol.com</p>
 
     </div>
     <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:31.5%;top:80px">
@@ -317,6 +317,32 @@
         </a>
         
     </div>
+    <script>
+        var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
+var b, ua = navigator.userAgent;
+for(var i=0; i < ba.length; i++){
+ if( ua.indexOf(ba[i]) > -1 ){
+     b = ba[i];
+     break;
+ }
+}
+if(b == "Safari" ){
 
+document.getElementById("ALL").style.top="-20px";
+document.getElementById("ALL").style.height="600px";
+document.getElementById("ALL").style.zoom="93%";
+document.getElementById("p1").style.top="70px";
+document.getElementById("p2").style.top="130px";
+document.getElementById("p3").style.top="130px";
+document.getElementById("p4").style.top="130px";
+document.getElementById("p5").style.top="130px";
+document.getElementById("p6").style.top="130px";
+document.getElementById("p7").style.top="95px";
+document.getElementById("p8").style.top="70px";
+
+
+
+} 
+ </script>
     </body>
 </html>
