@@ -213,8 +213,7 @@
     
     
         }
-    
-    
+
     </script>
      <script>
         if(screen.width<600){
@@ -237,7 +236,7 @@
           
         </div>
         <div class="rt-container">
-            <div class="col-rt-12">
+            <div id="h" class="col-rt-12">
                 <div class="Scriptcontent">
                  <div class="underlineEffects" style="position:relative;left: -5%;">
                      <ul>
@@ -278,7 +277,8 @@
             }
            
         }
-    
+      
+
     </script>
 <div style="position: relative;top:-40px;left:22%;width: 900px;zoom: 85%;"> 
     
@@ -291,7 +291,7 @@
                 a statement that any data belongs to the company only.</p>
         
         </h2>
-        <img src="IMAGES/icons/Watermark_Laptop.png" alt="2" style="width: 151px;height: 90px;position:relative; left:4%;top:-5px">
+        <img id="IMG1" src="IMAGES/icons/Watermark_Laptop.png" alt="2" style="width: 151px;height: 90px;position:relative; left:4%;top:-5px">
     </div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:50px;display: flex;">
         <img src="IMAGES/numbers/2.png" alt="3" style="width: 70px;height: 70px;position:relative; left:4%;">
@@ -300,7 +300,7 @@
                 can track and investigate any publicly shared information.</p>
         
         </h2>
-        <img src="IMAGES/icons/fingerPrint.png" alt="4" style="width: 151px;height: 100px;position:relative; left:0%;top:-5px">
+        <img id="IMG2" src="IMAGES/icons/fingerPrint.png" alt="4" style="width: 151px;height: 100px;position:relative; left:0%;top:-5px">
     </div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:0px;display: flex;">
         <img src="IMAGES/numbers/3.png" alt="5" style="width: 70px;height: 70px;position:relative; left:4%;">
@@ -311,7 +311,7 @@
             </p>
         
         </h2>
-        <img src="IMAGES/icons/unauth.png" alt="6" style="width: 151px;height: 100px;position:relative; left:0%;top:-5px">
+        <img id="IMG3" src="IMAGES/icons/unauth.png" alt="6" style="width: 151px;height: 100px;position:relative; left:0%;top:-5px">
     </div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:-40px;display: flex;">
         <img src="IMAGES/numbers/4.png" alt="7" style="width: 70px;height: 70px;position:relative; left:4%;">
@@ -321,7 +321,7 @@
             </p>
         
         </h2>
-        <img id="pc" src="IMAGES/icons/reliable.png" alt="8" style="width: 151px;height: 90px;position:relative; left:4%;top:-5px">
+        <img id="IMG4" src="IMAGES/icons/reliable.png" alt="8" style="width: 151px;height: 90px;position:relative; left:4%;top:-5px">
     </div>
     
 </div>
@@ -329,18 +329,47 @@
 </div>
 <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:78%;top:-125px">
 
-    <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:-125px">
+    <hr id="HR"style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:-125px">
 
    
    <div style="display: flex;position: relative;top:-130px !">
-    <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:-142px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
-    <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:-122px">
+    <p id="PAR" style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:-142px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
+    <a id="letter" href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:-122px">
         <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;">
 </a>
-<a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:-122px">
-    <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
+<a  id="linkedin" href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:-122px">
+    <img  src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
     </a>
 </div>
+<script>
+    var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
+var b, ua = navigator.userAgent;
+for(var i=0; i < ba.length; i++){
+    if( ua.indexOf(ba[i]) > -1 ){
+        b = ba[i];
+        break;
+    }
+}
+if(b == "Safari" ){
+   document.getElementById("IMG1").style.width="140px";
+   document.getElementById("IMG1").style.left="8%";
 
+   document.getElementById("IMG2").style.width="100px";
+   document.getElementById("IMG2").style.left="6%";
+
+   document.getElementById("IMG3").style.width="100px";
+   document.getElementById("IMG3").style.left="6%";
+
+   document.getElementById("IMG4").style.width="140px";
+   document.getElementById("IMG4").style.left="8%";
+
+document.getElementById("contact").style.top="-105px";
+document.getElementById("HR").style.top="-105px";
+document.getElementById("PAR").style.top="-122px";
+document.getElementById("letter").style.top="-102px";
+document.getElementById("linkedin").style.top="-102px";
+
+} 
+</script>
     </body>
 </html>

@@ -307,17 +307,41 @@
 <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:74%;top:120px">
     </div>
     <div style="display: flex;">
-        <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:120px">
+        <hr id="HR" style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:120px">
   
        </div>
        <div style="display: flex;">
-        <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:105px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
-        <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:130px">
+        <p id="PAR" style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:105px;left:15.5%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
+        <a id="letter" href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:130px">
             <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;">
     </a>
-    <a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:130px">
+    <a id="linkedin" href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:130px">
         <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
         </a>
     </div>
+    <script>
+        var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
+var b, ua = navigator.userAgent;
+for(var i=0; i < ba.length; i++){
+ if( ua.indexOf(ba[i]) > -1 ){
+     b = ba[i];
+     break;
+ }
+}
+if(b == "Safari" ){
+
+document.getElementById("contact").style.top="135px";
+
+document.getElementById("HR").style.top="135px";
+
+document.getElementById("PAR").style.top="120px";
+
+document.getElementById("letter").style.top="145px";
+
+document.getElementById("linkedin").style.top="145px";
+
+} 
+ </script>
     </body>
+    
 </html>
