@@ -241,13 +241,13 @@
                     <div class="Scriptcontent">
                      <div class="underlineEffects" style="position:relative;left: -5%;">
                          <ul>
-                            <li style="left: -4.5%;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                            <li style="left: -4.5%;z-index: 30;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                              color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">About</a></li>
-                            <li  style="left: 0%;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                            <li  style="left: 0%;z-index: 30;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                              color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">Solutions</a></li>
-                            <li style="left: 7.5%;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                            <li style="left: 7.5%;z-index: 30;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                              color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">benefits</a></li>
-                            <li style="left: 15%;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                            <li style="left: 15%;z-index: 30;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                              color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">system</a></li>
                           </ul>
                       </div>
@@ -304,15 +304,15 @@
     </div>
     <img  id="contact" onclick="trigger()"  src="IMAGES/buttons/contact.png" alt="1" style="width: 130px;position:relative; left:31.5%;top:80px">
     <div style="display: flex;">
-        <hr style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:80px">
+        <hr id="HR" style="color:#EE316E;height: 2px;width:70%;background-color:rgba(230,230,230,1) ;border-color: transparent;position:relative; top:80px">
   
        </div>
        <div style="display: flex;">
         <p style="color:#EE316E;height: 2px;width:70%;;border-color: transparent;position:relative; top:70px;left:-13%;font-family:Cairo-Regular;">©2021 DataPatrol all rights reserved</p>
-        <a href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:90px">
+        <a id="letter" href="mailto:info@datapatrol.com" style="position:relative; left:8.5%;top:90px">
             <img   src="IMAGES/letter2.png" alt="1" style="width: 40px;height: 28px;position:relative; left:8%;">
     </a>
-    <a href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:90px">
+    <a id="linkedin" href="https://www.linkedin.com/company/datapatrol-co" style="position:relative; left:9.5%;top:90px">
         <img   src="IMAGES/LinkedIn.png" alt="1" style="width: 30px;position:relative; left:9.5%;">
         </a>
         
@@ -341,7 +341,11 @@ document.getElementById("p6").style.top="90px";
 document.getElementById("p7").style.top="65px";
 document.getElementById("p8").style.top="40px";
 
+document.getElementById("HR").style.top="204px";
 
+document.getElementById("letter").style.top="213px";
+
+document.getElementById("linkedin").style.top="213px";
 
 } 
  </script>

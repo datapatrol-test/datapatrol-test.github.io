@@ -223,7 +223,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-    <body style="overflow-x: hidden;overflow-y: hidden; background: url('IMAGES/backk.png')  no-repeat center fixed;background-size: cover;"> 
+    <body onload="lod()" style="overflow-x: hidden;overflow-y: hidden; background: url('IMAGES/backk.png')  no-repeat center fixed;background-size: cover;"> 
         <div style="background-color: transparent;color: #28245C;text-align: center;">
             <a href="index.html">
                 <img src="IMAGES/main.png" alt="DATAPATROL" style="width: 250px;position:relative; left:0%;">
@@ -235,18 +235,18 @@
             
           
         </div>
-        <div class="rt-container">
+        <div class="rt-container"style="">
             <div id="h" class="col-rt-12">
                 <div class="Scriptcontent">
                  <div class="underlineEffects" style="position:relative;left: -5%;">
                      <ul>
-                        <li style="left: -4.5%;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                        <li style="left: -4.5%;z-index: 30;"><a href="about.html" style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                          color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">About</a></li>
-                        <li  style="left: 0%;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                        <li  style="left: 0%;z-index: 30;"><a href="Solutions.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                          color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">Solutions</a></li>
-                        <li style="left: 7.5%;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid #4AC5D9;
+                        <li style="left: 7.5%;z-index: 30;"><a href="benefits.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid #4AC5D9;
                          color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">benefits</a></li>
-                        <li style="left: 15%;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
+                        <li style="left: 15%;z-index: 30;"><a href="system.html"style="background-color: transparent;font-family:Cairo-SemiBold; border: none;border-bottom: 3px solid rgba(230,230,230,1);
                          color: #28245C;text-align: center;text-decoration: none;display: inline-block;font-size: 23px; padding: 1px 32px;position: relative;left: 40%;top: 25px;margin-left: 5%;">system</a></li>
                       </ul>
                   </div>
@@ -286,8 +286,8 @@
     <div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:120px;display: flex;">
         <img src="IMAGES/numbers/1.png" alt="1" style="width: 70px;height: 70px;position:relative; left:4%;">
-        <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679">IDENTIFY <strong style="font-family: Cairo-Bold;">OWNERSHIP</strong> OF YOUR DATA 
-            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">By applying digital watermarks on the screens, you make <br>
+        <h2 style="font-family:Cairo-Regular;position:relative;left:15%;top:-35px;width: 950px;color: #005679">IDENTIFY <strong style="font-family: Cairo-Bold;font-weight: 900;">OWNERSHIP</strong> OF YOUR DATA 
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:18px">By applying digital watermarks on the screens, you make <br>
                 a statement that any data belongs to the company only.</p>
         
         </h2>
@@ -295,8 +295,8 @@
     </div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:50px;display: flex;">
         <img src="IMAGES/numbers/2.png" alt="3" style="width: 70px;height: 70px;position:relative; left:4%;">
-        <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">FORENSICS</strong> 
-            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">Metadata information will appear on all the screens, so you <br>
+        <h2 style="font-family:Cairo-Regular;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">FORENSICS</strong> 
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:18px">Metadata information will appear on all the screens, so you <br>
                 can track and investigate any publicly shared information.</p>
         
         </h2>
@@ -304,8 +304,8 @@
     </div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:0px;display: flex;">
         <img src="IMAGES/numbers/3.png" alt="5" style="width: 70px;height: 70px;position:relative; left:4%;">
-        <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">ALERT</strong> 
-            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">Having permanent watermarks on the screens, you assure <br>
+        <h2 style="font-family:Cairo-Regular;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">ALERT</strong> 
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:18px">Having permanent watermarks on the screens, you assure <br>
                 and alert all insiders that these data are confidential, and any<br>
                 exfiltration will be tracked.
             </p>
@@ -315,8 +315,8 @@
     </div>
     <div style="height: 200px;width: 800px;position:relative; left:25%;top:-40px;display: flex;">
         <img src="IMAGES/numbers/4.png" alt="7" style="width: 70px;height: 70px;position:relative; left:4%;">
-        <h2 style="font-family:Cairo-Light;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">COMPLIANCE</strong> 
-            <p style="font-size: 15px;position:relative; top:-20px;font-size:17px">Utilizing the AntiCopy feature which forces Data Entries to<br>
+        <h2 style="font-family:Cairo-Regular;position:relative;left:15%;top:-35px;width: 950px;color: #005679"><strong style="font-family: Cairo-SemiBold;">COMPLIANCE</strong> 
+            <p style="font-size: 15px;position:relative; top:-20px;font-size:18px">Utilizing the AntiCopy feature which forces Data Entries to<br>
                 write genuine content rather than copying it.
             </p>
         
@@ -342,6 +342,7 @@
     </a>
 </div>
 <script>
+    function lod(){
     var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
 var b, ua = navigator.userAgent;
 for(var i=0; i < ba.length; i++){
@@ -368,13 +369,14 @@ if(b == "Safari" ){
    document.getElementById("IMG4").style.width="140px";
    document.getElementById("IMG4").style.left="8%";
 
-document.getElementById("contact").style.top="-106px";
-document.getElementById("HR").style.top="-106px";
-document.getElementById("PAR").style.top="-123px";
-document.getElementById("letter").style.top="-103px";
-document.getElementById("linkedin").style.top="-103px";
+document.getElementById("contact").style.top="14px";
+document.getElementById("HR").style.top="14px";
+document.getElementById("PAR").style.top="-3px";
+document.getElementById("letter").style.top="17px";
+document.getElementById("linkedin").style.top="17px";
 
 } 
+}
 </script>
     </body>
 </html>
