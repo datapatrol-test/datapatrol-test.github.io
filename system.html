@@ -86,7 +86,7 @@
         else if (screen.availWidth == 1536) {
     
             var sheet = document.createElement('style');
-            sheet.innerHTML = "html {zoom: 80% !important;}";
+            sheet.innerHTML = "html {zoom: 79% !important;}";
             document.head.appendChild(sheet);
     
     
@@ -110,7 +110,7 @@
         else if (screen.availWidth == 1680) {
     
             var sheet = document.createElement('style');
-            sheet.innerHTML = "div {zoom: 90% !important;} hs-form-iframe{zoom:100% !importent}";
+            sheet.innerHTML = "div {zoom: 87.5% !important;} hs-form-iframe{zoom:100% !importent}";
             document.head.appendChild(sheet);
     
     
@@ -135,7 +135,7 @@
         else if (screen.availWidth == 1600) {
     
             var sheet = document.createElement('style');
-            sheet.innerHTML = "html {zoom: 85% !important;}";
+            sheet.innerHTML = "html {zoom: 82% !important;}";
             document.head.appendChild(sheet);
     
     
@@ -159,7 +159,7 @@
         else if (screen.availWidth == 1440) {
     
             var sheet = document.createElement('style');
-            sheet.innerHTML = "html {zoom: 75% !important;}";
+            sheet.innerHTML = "html {zoom: 78.5% !important;}";
             document.head.appendChild(sheet);
     
     
@@ -183,7 +183,7 @@
         else if (screen.availWidth == 1366) {
     
             var sheet = document.createElement('style');
-            sheet.innerHTML = "html {zoom: 62% !important;}";
+            sheet.innerHTML = "html {zoom: 69.5% !important;}";
             document.head.appendChild(sheet);
     
     
@@ -284,7 +284,8 @@
     <h1  style="font-family: Cairo-Bold;color: #28245C;position:relative; left:25%;top:50px;width: 700px;">HOW DOES THE SYSTEM WORK</h1>
     
     <img src="IMAGES/system.png" alt="1" style="width: 800px;position:relative; left:20%;top:0px">
-    <div style="background-color: rgba(230,230,230,1);width: 16%;height: 590px;position: absolute;top: 340px;left: 58%;">
+    
+    <div id="BOX" style="background-color: rgba(230,230,230,1);width: 16%;height: 590px;position: absolute;top: 340px;left: 58%;">
     <h1 style="text-align: left;background-color: #4AC5D9;font-family: Cairo-SemiBold;color: white;position: relative;top:-20px">&nbsp HIGHLIGHTS</h1>
    <div style="position: relative;top:-25px">
     <p style="font-family:Cairo-Regular;text-align:left;line-height: 160%;color: #28245C;">
@@ -355,6 +356,17 @@ document.getElementById("PAR").style.top="161px";
 document.getElementById("letter").style.top="181px";
 
 document.getElementById("linkedin").style.top="181px";
+
+} 
+
+
+else if(b == "Firefox" ){
+   
+document.body.style.transform="scale(1,.90)";
+
+document.getElementById("BOX").style.width="500px";
+document.getElementById("BOX").style.top="250px";
+document.getElementById("BOX").style.left="60%";
 
 } 
 </script>
